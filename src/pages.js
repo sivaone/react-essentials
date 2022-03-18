@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, Outlet } from "react-router-dom";
 
 export function Home() {
     return (
@@ -18,6 +18,7 @@ export function About() {
     return (
         <div>
             <h1>[About]</h1>
+            <Outlet />
         </div>
     );
 }
@@ -42,6 +43,22 @@ export function Services() {
     return(
         <div>
             <h2>Our services</h2>
+        </div>
+    );
+}
+
+export function CompanyHistory() {
+    return(
+        <div>
+            <h2>Our company history</h2>
+        </div>
+    );
+}
+
+export function Location() {
+    return(
+        <div>
+            <h2>Our Location</h2>
         </div>
     );
 }
